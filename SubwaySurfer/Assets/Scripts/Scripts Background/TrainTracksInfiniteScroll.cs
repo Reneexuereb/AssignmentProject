@@ -4,38 +4,39 @@ using UnityEngine;
 
 public class TrainTracksInfiniteScroll : MonoBehaviour
 {
-    private BoxCollider2D boxCollider;
-
-    private Rigidbody2D rb ;
-
-    private float height;
-
-    private float speed = 3f;
-
+    [SerializeField]
+    private float _speed = 3f;
+    [SerializeField]
+    private bool _randomizeHeight = true;
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
-        rb = GetComponent<Rigidbody2D>();
-
-        height = boxCollider.size.y;
-        rb.velocity = new Vector3(0 ,speed);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y< -height)
-        {
-            Reposition();
-        }
-    }
+        //Vector3.down = Vector3(-1,0,0)
+        //Vector3.down (-7) * 1 * _speed(3) = -3
+        transform.Translate(Vector3.down * Time.deltaTime * _speed);
 
-    private void Reposition()
-    {
-        Vector3 vector = new Vector3(0 , height * 2f);
-        transform.position = (Vector3)transform.position + vector;
+        //check the y position of the train tracks if it is smaller then -75
+        if(transform.position.y < -75)
+        {
+            if(_randomizeHeight)
+            {
+                float randomYPosition = Random.Range(-3f,3f);
+                Debug.Log("The random position is: " + randomYPosition);
+                //teleport  to -75 on the axis
+                transform.position = new Vector3(0,-75,randomYPosition);
+            }
+            else
+            {
+                transform.position = new Vector3 (-75,transform.position.y,transform.position.z);
+            }
+        }
+        
     }
 }
-
 
