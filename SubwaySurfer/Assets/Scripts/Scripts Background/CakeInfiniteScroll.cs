@@ -4,36 +4,32 @@ using UnityEngine;
 
 public class CakeInfiniteScroll : MonoBehaviour
 {
-    private BoxCollider2D boxCollider;
+    [SerializeField]
+    private float _speed = 2f;
+    // Start is called before the first from update
 
-    private Rigidbody2D rb ;
-
-    private float height;
-
-    private float speed = 3f;
-
-    // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
-        boxCollider = GetComponent<BoxCollider2D>();
-        rb = GetComponent<Rigidbody2D>();
 
-        height = boxCollider.size.y;
-        rb.velocity = new Vector3(0 ,speed);
     }
 
     // Update is called once per frame
+
     void Update()
     {
-        if(transform.position.y< -height)
-        {
-            Reposition();
-        }
-    }
+        //Vector3.down = Vector3(0,-1,0)
+        //Vector3.down (-1) * 1 * _speed(3) = -3
+        transform.Translate(Vector3.down * Time.deltaTime * _speed);
 
-    private void Reposition()
-    {
-        Vector3 vector = new Vector3(0 , height * 2f);
-        transform.position = (Vector3)transform.position + vector;
+        //check the y position of the train tracks if it is smaller than -17
+        if(transform.position.y < -17)
+        {
+            //teleport to 17 on the y axis
+            transform.position = new Vector3(0,17,0);
+        }
+       
     }
+    
 }
+
+

@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Vector2
   - Vector3
+  - spawnable
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 426023961
+    locked: 0
+  - name: Foreground
+    uniqueID: 412962661
+    locked: 0
+  - name: Cake
+    uniqueID: 1876298733
+    locked: 0
+  - name: Player
+    uniqueID: 2999009769
+    locked: 0
+  - name: candy
+    uniqueID: 1353153065
+    locked: 0
+  - name: obstacles
+    uniqueID: 2991647701
     locked: 0
