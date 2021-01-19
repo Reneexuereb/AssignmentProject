@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public float speed = 2f;
-    private Rigidbody2D rb;
+    public float speed = 3f;
+    
     
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0,-speed);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-        
+       transform.Translate(Vector3.down * Time.deltaTime * speed);
+       if(transform.position.y < -8f)
+       {
+           float random_X = Random.Range(-1.5f,1.5f);
+           transform.position = new Vector3(random_X,20,transform.position.z);
+       }  
     }
 }
