@@ -216,7 +216,7 @@ Transform:
   m_LocalScale: {x: 0.23680663, y: 0.23680663, z: 0.23680663}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &73733030
 BoxCollider2D:
@@ -366,7 +366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 378, y: -93.2}
+  m_AnchoredPosition: {x: 378, y: -93.200195}
   m_SizeDelta: {x: 390.0818, y: 174.31389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322035491
@@ -538,7 +538,7 @@ Transform:
   - {fileID: 1836932989}
   - {fileID: 603806176}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &558260602
 GameObject:
@@ -607,8 +607,8 @@ Canvas:
   m_GameObject: {fileID: 558260602}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -616,7 +616,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1303319595
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &558260606
@@ -632,7 +632,7 @@ RectTransform:
   m_Children:
   - {fileID: 322035490}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1186,7 +1186,7 @@ Transform:
   m_LocalScale: {x: 0.2798663, y: 0.2798663, z: 0.2798663}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &917126918
 BoxCollider2D:
@@ -1316,7 +1316,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1005518453 stripped
 Transform:
