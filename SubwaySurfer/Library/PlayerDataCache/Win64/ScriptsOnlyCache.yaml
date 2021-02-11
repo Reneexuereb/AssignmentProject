@@ -54,33 +54,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11282}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11442}
     - Class: 114
-      Script: {instanceID: 11468}
+      Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11552}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12168}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12302}
+      Script: {instanceID: 12310}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 12740}
+      Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12920}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13132}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -114,26 +114,30 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11282}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11442}
     - Class: 114
-      Script: {instanceID: 11476}
+      Script: {instanceID: 11484}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 12254}
+      Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12298}
     - Class: 114
-      Script: {instanceID: 12740}
+      Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 13100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -647,5 +651,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: /Users/reneexuereb/Desktop/LEVEL 4.2 /Basics og Game engines/Candy
-    Surfer/Candy Surfer.exe
+  playerPath: /Users/christinepacerivans/Downloads/CandySurfer/Candy Surfer.exe
